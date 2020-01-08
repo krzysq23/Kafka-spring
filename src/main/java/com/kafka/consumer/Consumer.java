@@ -16,11 +16,12 @@ public class Consumer {
 
         if (kafkaMessage.isPresent()) {
 
-            Object message = kafkaMessage.get();
-            System.out.println("---->"+record);
-            System.out.println("---->"+message);
+			Object message = kafkaMessage.get();
+			System.out.println("---->" + record);
+			System.out.println("---->" + message);
 
         }
 
     }
+    
 }
