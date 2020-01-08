@@ -14,7 +14,7 @@ import com.google.gson.GsonBuilder;
 public class Producer {
 
     @Autowired
-    private KafkaTemplate<String, String> kafkaTemplate;
+    private KafkaTemplate<?, String> kafkaTemplate;
 
     private static Gson gson = new GsonBuilder().create();
 
